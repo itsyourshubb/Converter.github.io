@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+    <link rel="stylesheet" href="convertercss.css">
+    <script src="convert.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h3>Converter</h3>
+        </div>
+    </header>
+    <main>
+        <div class="maindiv">
+            <div class="container">
+                <label for="choose">Select</label>
+                <select name="dropd" id="choose" onchange="funchng()">
+                    <option value="">--Please choose an option--</option>
+                    <option value="scl" id="choose1" onclick="sclfun()">Scale Converter (m,cm,foot)</option>
+                    <option value="curr" id="choose2" onclick="currfun()">Currency Converter (Rs,$, diharam)</option>
+                    <option value="wght" id="choose3" onselect="wghtfun()">Weight Converter (kg,gm,pound)</option>
+                </select>
+            </div>
+            <br>
+            <div class="inputs2" id="inp2">
+                <select name="dropd" id="chooseagain" onchange="funchng2()">
+                    <option value="">--Please choose an option--</option>
+                    <!-- <option value="scl" id="choose1" onclick="sclfun()">Rupee To Dollar (vice & versa)</option>
+            <option value="curr" id="choose2" onclick="currfun()">Rupee To Euro (vice & versa)</option>
+            <option value="wght" id="choose3" onselect="wghtfun()">Dollar To Euro (vice & versa)</option> -->
+                </select>
+            </div>
+            <br>
+            <div class="inputs" id="inp">
+                <!-- <label for="from">Rupee: </label>
+        <input type="number" id="from">
+        <br><br>
+        <input type="submit" value="Convert">
+        <br><br>
+        <label for="to">Dollar: </label>
+        <input type="number" id="to">
+        <br><br> -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footdiv">
+            itsyourshubb &copy; copyright
+        </div>
+    </footer>
+    
+</body>
+
+</html>
